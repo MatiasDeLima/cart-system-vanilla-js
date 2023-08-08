@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Cart System</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo"> Furniture. </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Home</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">About us</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">Products</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">Services</a>
+            </li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav__buttons">
+          <i class="ri-briefcase-line cart__button" id="cart-button"></i>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="cart__menu" id="cart">
+      <div class="cart__top">
+        <h2 class="cart__top-title">Cart items.</h2>
+
+        <div class="cart__close" id="cart-close">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+      <div class="cart__content">
+        <article class="cart__card">
+          <div class="cart__card-content">
+            <img src="./images/armchair.png" alt="cart image">
+            <div class="card__content-data">
+              <h2 class="card__content-title">Armchair</h2>
+              <p class="card__content-category">Armchair</p>
+              <h4 class="card__content-price">$123</h4>
+            </div>
+          </div>
+
+          <div class="cart__card-actions">
+            <button class="cart-remove-button">Remove</button>
+
+            <div class="cart__card-btns">
+              <button class="subtract__button">
+                <i class="ri-subtract-line"></i>
+              </button>
+              <span class="cart__number">0</span>
+              <button class="add__button">
+                <i class="ri-add-line"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <main class="main">
+      <section class="section">
+        <div class="container grid-2">
+          <div class="container__data">
+            <h2 class="furniture__title">Your Ultimate Chair Destination</h2>
+            <p class="furniture__description">
+              Discover a world of comfort and style at ChairEnsemble your
+              premier online destination for an exquisite collection of chairs.
+            </p>
+          </div>
+          <div class="furniture__container grid" id="product-list">
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
