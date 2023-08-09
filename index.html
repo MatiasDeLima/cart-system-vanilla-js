@@ -43,8 +43,11 @@
         </div>
 
         <div class="nav__buttons">
-          <i class="ri-briefcase-line cart__button" id="cart-button"></i>
-
+          <div class="cart-icon-circle">
+            <span id = "cart-count-info"></span>
+            <i class="ri-briefcase-line cart__button" id="cart-button"></i>
+          </div>
+          
           <div class="nav__toggle" id="nav-toggle">
             <i class="ri-menu-line"></i>
           </div>
@@ -61,30 +64,12 @@
         </div>
       </div>
       <div class="cart__content">
-        <article class="cart__card">
-          <div class="cart__card-content">
-            <img src="./images/armchair.png" alt="cart image">
-            <div class="card__content-data">
-              <h2 class="card__content-title">Armchair</h2>
-              <p class="card__content-category">Armchair</p>
-              <h4 class="card__content-price">$123</h4>
-            </div>
-          </div>
+        
+      </div>
 
-          <div class="cart__card-actions">
-            <button class="cart-remove-button">Remove</button>
-
-            <div class="cart__card-btns">
-              <button class="subtract__button">
-                <i class="ri-subtract-line"></i>
-              </button>
-              <span class="cart__number">0</span>
-              <button class="add__button">
-                <i class="ri-add-line"></i>
-              </button>
-            </div>
-          </div>
-        </article>
+      <div class="cart__menu-bottom">
+        <h3>Total: $</h3>
+        <span id = "cart-total-value"></span>
       </div>
     </div>
 

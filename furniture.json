@@ -2,49 +2,49 @@
     {
         "name": "Chair",
         "category": "Dining chairs ",
-        "price": "$150",
-        "imgSrc": "./images/armchair.png"
+        "price": "150",
+        "imgSrc": "images/armchair.png"
     },
     {
         "name": "Armchair",
         "category": "Accent chairs ",
-        "price": "$220",
-        "imgSrc": "./images/bed.png"
+        "price": "220",
+        "imgSrc": "images/bed.png"
     },
     {
         "name": "Rocking chair",
         "category": "Accent chairs ",
-        "price": "$500",
-        "imgSrc": "./images/banner-img.png"
+        "price": "500",
+        "imgSrc": "images/banner-img.png"
     },
     {
         "name": "Dining chair",
         "category": "Accent chairs ",
-        "price": "$300",
-        "imgSrc": "./images/desk.png"
+        "price": "300",
+        "imgSrc": "images/desk.png"
     },
     {
         "name": "Office chair",
         "category": "Office chairs",
         "price": "$500",
-        "imgSrc": "./images/scissors-chair.png"
+        "imgSrc": "images/scissors-chair.png"
     },
     {
         "name": "Lounge chair",
         "category": "Lounge chairs",
-        "price": "$740",
-        "imgSrc": "./images/sofa-bed.png"
+        "price": "740",
+        "imgSrc": "images/sofa-bed.png"
     },
     {
         "name": "Recliner chair",
         "category": "Recliner chairs",
-        "price": "$200",
-        "imgSrc": "./images/white-sofa.png"
+        "price": "200",
+        "imgSrc": "images/white-sofa.png"
     },
     {
         "name": "Folding chair",
         "category": "Outdoor chairs",
-        "price": "$100",
-        "imgSrc": "./images/bench.png"
+        "price": "100",
+        "imgSrc": "images/bench.png"
     }
 ]
