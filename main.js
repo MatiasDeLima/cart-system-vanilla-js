@@ -51,6 +51,35 @@ const scrollHeader = () => {
 };
 window.addEventListener("scroll", scrollHeader);
 
+let progressBar = document.querySelector(".circular__progress");
+let valueNumber = document.querySelector(".loading__number");
+
+// console.log(progressBar, valueNumber);
+onload = () => {
+    const load = document.getElementById("loading-page");
+
+    setTimeout(() => {
+        load.style.display = 'none';
+    }, 6000)
+}
+
+let progressValue = 0;
+let progressValueEnd = 100;
+let speed = 50;
+
+let progress = setInterval(() => {
+    progressValue++;
+    valueNumber.textContent = `${progressValue}%`;
+    progressBar.style.background  = `conic-gradient(
+        var(--first-color) ${progressValue * 3.6}deg,
+        var(--container-color) ${progressValue *3.6}deg
+    )`;
+    // console.log(progressValue);
+    if (progressValue == progressValueEnd) {
+        clearInterval(progress);
+    }
+}, speed);
+
 const productList = document.getElementById("product-list");
 const cartList = document.querySelector(".cart__content");
 const cartTotalValue = document.getElementById('cart-total-value');
@@ -210,12 +239,12 @@ function findCartInfo(){
 function deleteProduct(e){
   let cartItem;
   if(e.target.tagName === "BUTTON"){
-      cartItem = e.target.parentElement; // erro element
-      cartItem.remove(); // this removes from the DOM only
-  } else if(e.target.tagName === "I"){
       cartItem = e.target.parentElement.parentElement; // erro element
       cartItem.remove(); // this removes from the DOM only
-  }
+  } /*else if(e.target.tagName === "I"){
+      cartItem = e.target.parentElement.parentElement; // erro element
+      cartItem.remove(); // this removes from the DOM only
+  }*/
 
   let products = getProductFromStorage();
   let updatedProducts = products.filter(product => {
